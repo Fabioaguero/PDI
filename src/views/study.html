@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&family=Ubuntu:wght@700&display=swap"  
           rel="stylesheet">
 
-    <title>Proffy | Sua plataforma de estudos online</title>
+    <title>PDI | Estudos online</title>
 </head>
 <body id="page-study">
 
@@ -29,13 +29,23 @@
                 <a href="/">
                     <img src="/assets/icons/back.svg" alt="Voltar">
                 </a>
-                <img src="/assets/logo.svg" alt="logo proffy">
+                <img src="/assets/pdi.svg" alt="logo proffy">
             </div>
 
             <div class="header-content">
-                <strong>Esses são os proffys disponíveis</strong>
+                <strong>Esses são os curos finalizados</strong>
 
                 <form action="" id="search-teachers">
+                    <div class="select-block">
+                        <label for="nivel">plataforma</label>
+                        <select name="nivel" id="weekday">
+                            <option value="" disabled="" hidden="">Selecione uma opção</option>
+                            <option value="0">Rocketseat</option>
+                            <option value="1">DIO</option>
+                            <option value="2">IOX-Itaú</option>
+                        </select>
+                    </div>
+
                     <div class="select-block">
                         <label for="area">Área</label>
                         <select name="area" id="subject">
@@ -48,6 +58,7 @@
                         </select>
                     </div>
 
+                    
                     <div class="select-block">
                         <label for="curso">Curso</label>
                         <select name="curso" id="weekday">
@@ -61,15 +72,6 @@
                     </div>
 
 
-                    <div class="select-block">
-                        <label for="nivel">Nível</label>
-                        <select name="nivel" id="weekday">
-                            <option value="" disabled="" hidden="">Selecione uma opção</option>
-                            <option value="0">Básico</option>
-                            <option value="1">Intermediário</option>
-                            <option value="2">Avançado</option>
-                        </select>
-                    </div>
 
                     <button type="submit">Filtrar</button>
                 </form>
@@ -95,8 +97,8 @@
                     <p>Duração<strong>{{curso.time}}</strong>
                     </p>
                     <a class="button" href="{{curso.link}}" target="_blank" type="a">
-                        <img src="/assets/icons/give-classes.svg" alt="acessar aula">
-                        Acessar aula
+                        <img src="/assets/icons/give-classes.svg" alt="acessar certificado">
+                        Certificado
                     </a>
                 </footer>
             </article>
@@ -106,4 +108,6 @@
     </div>
 
 </body>
+<script src="../../public/scripts/main.js"></script>
+
 </html>

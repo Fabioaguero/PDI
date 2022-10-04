@@ -11,7 +11,7 @@
 }
 
 .logo-container img {
-    height: 10rem;
+    height: 12rem;
 }
 
 .logo-container {
@@ -21,9 +21,11 @@
 
 .logo-container h2 {
     font-weight: 500;
-    font-size: 3.6rem;
+    font-size: 6.6rem;
     line-height: 4.6rem;
-    margin-top: .8rem;
+    margin-top: 5rem;
+    margin-left: 6rem;
+    text-align: center;
 }
 
 .hero-image {
@@ -114,7 +116,7 @@
     }
 
     .logo-container img {
-        height: 127px;
+        height: 147px;
     }
 
     .hero-image {
